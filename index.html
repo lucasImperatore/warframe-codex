@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warframe Codex Ultra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Codex de Warframes</h1>
+    
+    <div class="search-container">
+        <input type="text" id="wfInput" list="wfOptions" placeholder="Digite o nome do Warframe (ex: Ash, Mesa, Rhino)...">
+            <datalist id="wfOptions">
+                <option value="Ash">
+                <option value="Excalibur">
+                <option value="Mesa">
+                <option value="Rhino">
+                <option value="Saryn">
+                <option value="Volt">
+                <option value="Wisp">
+            </datalist>
+        <button id="searchBtn">PESQUISAR</button>
+
+    </div>
+
+    <div id="status-msg"></div>
+
+    <div id="result-container">
+        <div class="hero-section">
+            <img id="wf-image" src="" alt="">
+
+                <div class="info-main">
+                <span id="wf-type" class="wf-type"></span>
+                <h2 id="wf-name" class="wf-title"></h2>
+                <p id="wf-desc" class="wf-desc"></p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">SAÚDE</span>
+                <span id="stat-health"></span>
+                </div>
+                <div class="stat-item">
+                <span class="stat-label">ESCUDO</span>
+                <span id="stat-shield"></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">ARMADURA</span>
+                <span id="stat-armor"></span>
+            </div>
+            <div class="stat-item">
+            <span class="stat-label">ENERGIA</span>
+                <span id="stat-energy"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <a href="weapons.html">
+                <button>ARMAS</button>
+            </a>
+
+            <a href="pets.html">
+                <button src="pets.html">PETS</button>
+            </a>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
