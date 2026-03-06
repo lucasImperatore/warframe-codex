@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warframe Codex Ultra - Armas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Codex de Armas</h1>
+    
+    <div class="search-container">
+        <input type="text" id="wfInput" list="weaponOptions" placeholder="Digite o nome da Arma (ex: Soma, Tigris, Nikana)...">
+            <datalist id="weaponOptions">
+                <option value="Soma Prime">
+                <option value="Tigris Prime">
+                <option value="Rubico Prime">
+                <option value="Nikana Prime">
+                <option value="Guandao Prime">
+                <option value="Lex Prime">
+            </datalist>
+        <button id="searchBtn">PESQUISAR</button>
+    </div>
+
+    <div id="status-msg"></div>
+
+    <div id="result-container">
+        <div class="hero-section">
+            <img id="wf-image" src="" alt="" onerror="this.src='https://via.placeholder.com/400?text=Imagem+Indisponivel'">
+            
+            <div class="info-main">
+                <span id="wf-type" class="wf-type"></span>
+                <h2 id="wf-name" class="wf-title"></h2>
+                <p id="wf-desc" class="wf-desc"></p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">DANO TOTAL</span>
+                <span id="stat-damage"></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">CHANCE CRÍTICA</span>
+                <span id="stat-crit"></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">MULT. CRÍTICO</span>
+                <span id="stat-multiplier"></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">CHANCE DE STATUS</span>
+                <span id="stat-status"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="nav-footer">
+            <a href="index.html"><button>WARFRAMES</button></a>
+            <a href="pets.html"><button>PETS</button></a>
+        </div>
+    </div>
+
+    <script src="weapons.js"></script>
+</body>
+</html>
